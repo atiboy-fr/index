@@ -1,0 +1,47 @@
+.parent {
+    background-color: black;
+    position: relative;
+    gap: 10px;
+    height: 100vh;
+    padding: 20px;
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
+    grid-template-areas: 'one one one'
+                          'two two three'
+                          'four five five'
+                          'six six six';
+}
+.child {
+    border: 2px solid purple;
+    text-align: center;
+    padding: 10px;
+}
+.chil1 {
+    background-color: blue;
+    grid-area: one;
+}
+.chil2 {
+    background-color: brown;
+    grid-area: two;
+}
+.chil3 {
+    background-color: yellow;
+    grid-area: three;
+}
+.chil4 {
+    background-color: green;
+    grid-area: four;
+}
+.chil5 {
+    background-color: aqua;
+    grid-area: five;
+}
+.chil6 {
+    background-color: orange;
+    grid-area: six;
+}
+.droid {
+    color: #b900ff;
+}
